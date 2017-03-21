@@ -9,23 +9,27 @@ class Router extends HttpRouter
     public function __construct()
     {
         $this->get('/', function () {
-            echo 'cool route';
+            return 'cool route :)';
+        });
+
+        $this->get('/something/{foo}/foo/{?bar}', function ($foo, $bar = '') {
+            return 'you entered '.$foo.' and '.$bar;
         });
 
         $this->get('/test', function () {
-            echo 'this is the etest routre';
+            return 'this is the etest routre';
         });
 
         $this->post('/test', function () {
-            echo 'this time you used post!';
+            return 'this time you used post!';
         });
 
         $this->put('/test', function () {
-            echo 'and now put!';
+            return 'and now put!';
         });
 
         $this->delete('/test', function () {
-            echo 'testing delete requests';
+            return 'testing delete requests';
         });
     }
 }
