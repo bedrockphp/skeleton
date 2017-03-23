@@ -1,7 +1,7 @@
 {
-    "name": "bedrock/bedrock",
-    "description": "Bedrock mini framework.",
-    "keywords": ["framework", "bedrock"],
+    "name": "bedrockphp/skeleton",
+    "description": "Skeleton application for Bedrock mini framework.",
+    "keywords": ["framework", "bedrock", "skeleton"],
     "license": "MIT",
     "type": "project",
     "require": {
